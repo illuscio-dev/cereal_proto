@@ -42,3 +42,9 @@ message TestOneOfMultiMessage {
     Wizard wizard = 2;
   }
 }
+
+// Used to test custom wrapper types.
+message ListValue {
+  // @inject_tag: bson:"value"
+  repeated string value = 1;
+}
