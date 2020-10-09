@@ -1,0 +1,10 @@
+syntax = "proto3";
+package cereal_doc;
+option go_package = "github.com/illuscio-dev/protoCereal-go/docsProto";
+
+
+// Wrapper for fixed int64.
+message Fixed64Value {
+  // @inject_tag: bson:"value"
+  fixed64 value= 1;
+}
