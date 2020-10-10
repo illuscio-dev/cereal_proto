@@ -4,26 +4,16 @@ option go_package = "github.com/illuscio-dev/protoCereal-go/messagesCereal_test"
 
 import "cereal_proto/decimal.proto";
 
-message StringList {
-  // @inject_tag: bson:"value"
-  repeated string value = 1;
-}
-
-message Int64List {
-  // @inject_tag: bson:"value"
-  repeated int64 value = 1;
-}
-
 message DecimalList {
   // @inject_tag: bson:"value"
   repeated cereal.Decimal value = 1;
 }
 
 message HasCustomOneOf {
-  // @inject_tag: bson:"list"
-  oneof list {
-    StringList list_string = 1;
-    Int64List list_int4 = 2;
-    DecimalList list_decimal = 3;
+  // @inject_tag: bson:"many"
+  oneof many {
+    cereal.Decimal decimal_value = 1;
+    string string_value = 2;
+    DecimalList decimal_list = 3;
   }
 }
