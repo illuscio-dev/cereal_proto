@@ -17,3 +17,10 @@ message HasCustomOneOf {
     DecimalList decimal_list = 3;
   }
 }
+
+message HasOneOfBytes {
+  oneof value {
+    bytes bytes_value = 1;
+    string string_value = 2;
+  }
+}
