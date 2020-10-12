@@ -1,6 +1,6 @@
 syntax = "proto3";
 package cereal_test;
-option go_package = "github.com/illuscio-dev/protoCereal-go/messagesCereal_test";
+option go_package = "github.com/illuscio-dev/protoCereal-go/cerealMessages_test";
 
 import "cereal_proto/decimal.proto";
 

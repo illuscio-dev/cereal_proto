@@ -1,6 +1,6 @@
 syntax = "proto3";
 package cereal;
-option go_package = "github.com/illuscio-dev/protoCereal-go/messagesCereal";
+option go_package = "github.com/illuscio-dev/protoCereal-go/cerealMessages";
 
 // Decimal 128 binary that matches the bson specification using a dual uint64 encoding.
 message Decimal {
