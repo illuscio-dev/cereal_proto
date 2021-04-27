@@ -5,5 +5,5 @@ option go_package = "github.com/illuscio-dev/protoCereal-go/cereal";
 // Wrapper type for UUID to make type-based marshalling and unmarshalling easier
 message UUID {
   // Raw uuid bytes go here.
-  bytes value = 1;
+  bytes bin = 1;
 }
